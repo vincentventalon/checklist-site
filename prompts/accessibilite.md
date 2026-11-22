@@ -4,7 +4,7 @@ Claude teste ton site dans Chrome avec les critères du RGAA, la référence fra
 Les outils automatiques ne trouvent qu'une partie des problèmes : le prompt fait aussi les tests à la main (le clavier, le focus).
 
 ```
-Fais l'audit accessibilité de mon site https://ton-site.fr dans Chrome, en lecture seule, avec les critères du RGAA. Ne modifie rien.
+Fais l'audit accessibilité de mon site https://ton-site.fr dans Chrome, en lecture seule, avec les critères du RGAA. Ne modifie rien : la seule chose que tu écris, c'est le fichier de résultats dans checklist/.
 1. Lance un audit Lighthouse accessibilité sur la page d'accueil et deux autres pages. Donne le score, et rappelle-moi que ces outils ne trouvent qu'une partie des problèmes.
 2. Images : chacune a-t-elle un texte alternatif (alt) ? Un alt vide seulement pour les images décoratives.
 3. Contrastes : liste les textes sous 4,5:1 (3:1 pour le gros texte et les boutons), avec leurs deux couleurs.

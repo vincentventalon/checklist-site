@@ -4,7 +4,7 @@ Claude relit ton code et ton site en ligne, en lecture seule, et te rend la list
 Lance-le dans le dossier de ton projet. La commande `/security-review` de Claude Code ne relit que les changements de ta branche, pas tout ton site : ce prompt-là regarde tout.
 
 ```
-Fais l'audit sécurité de mon site, en lecture seule : le code de ce dossier et le site en ligne https://ton-site.fr. Ne modifie rien.
+Fais l'audit sécurité de mon site, en lecture seule : le code de ce dossier et le site en ligne https://ton-site.fr. Ne modifie rien : la seule chose que tu écris, c'est le fichier de résultats dans checklist/.
 1. Clés exposées : tout ce qui commence par NEXT_PUBLIC_ ou VITE_ part dans le navigateur. Liste chaque variable et dis si c'est un secret. Cherche aussi des clés écrites en dur dans le code et dans l'historique git.
 2. Supabase : la RLS est-elle activée sur chaque table ? La clé secrète (service_role) reste-t-elle côté serveur ? Firebase : montre mes règles, et dis s'il reste un "if true" ou un "auth != null" tout seul.
 3. Pour chaque action qui lit ou écrit des données privées : le serveur vérifie-t-il qui demande, à chaque requête ? En lisant le code, dis ce qui se passe si quelqu'un change l'id dans l'adresse.

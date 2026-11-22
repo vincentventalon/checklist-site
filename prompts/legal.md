@@ -4,7 +4,7 @@ Claude compare ton site à ce que disent la CNIL et service-public.fr, point par
 Ce n'est pas un conseil juridique : c'est un état des lieux pour savoir quoi demander, et à qui.
 
 ```
-Fais l'état des lieux légal de mon site https://ton-site.fr, en lecture seule, pour un site visé par le droit français. Ce n'est pas un conseil juridique : appuie-toi seulement sur service-public.fr et cnil.fr, ouvre ces pages pour vérifier, cite l'adresse de la source pour chaque point, et dis-moi quand il faut demander à un professionnel. Ne modifie rien.
+Fais l'état des lieux légal de mon site https://ton-site.fr, en lecture seule, pour un site visé par le droit français. Ce n'est pas un conseil juridique : appuie-toi seulement sur service-public.fr et cnil.fr, ouvre ces pages pour vérifier, cite l'adresse de la source pour chaque point, et dis-moi quand il faut demander à un professionnel. Ne modifie rien : la seule chose que tu écris, c'est le fichier de résultats dans checklist/.
 Les sources : entreprendre.service-public.gouv.fr/vosdroits/F37351 (mentions légales), cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/que-dit-la-loi (cookies), cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies-solutions-pour-les-outils-de-mesure-daudience (statistiques), cnil.fr/fr/conformite-rgpd-information-des-personnes-et-transparence (confidentialité).
 1. Ouvre le site dans Chrome, cache vidé, sans rien cliquer. Liste chaque cookie et chaque requête vers un autre domaine (statistiques, pub, polices, vidéos) envoyés AVANT que j'accepte quoi que ce soit.
 2. Le bandeau cookies : le bouton « Tout refuser » est-il aussi simple que « Tout accepter » ? Clique sur refuser et vérifie que les traceurs ne partent plus.

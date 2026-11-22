@@ -3,7 +3,7 @@
 Copie du prompt `prompts/vitesse.md`. L'adresse du site remplace `https://ton-site.fr`.
 Suis les étapes dans l'ordre, puis rends la section dans la forme de `SKILL.md` § 3.
 
-Ouvre mon site https://ton-site.fr dans Chrome (Chrome DevTools MCP). Ne modifie rien pour l'instant.
+Ouvre mon site https://ton-site.fr dans Chrome (Chrome DevTools MCP). Ne modifie rien : la seule chose que tu écris, c'est le fichier de résultats dans checklist/.
 1. Chronomètre l'ouverture de la page à froid (cache vidé) : temps jusqu'au premier octet (TTFB), affichage du plus gros élément (LCP), décalage de la mise en page (CLS).
 2. Dis-moi ce qui prend le plus de temps.
 3. Fais la liste de tout ce que la page charge avant de s'afficher : chaque fichier, son poids, son temps. Tu ne touches à rien sans m'avoir montré ces chiffres.

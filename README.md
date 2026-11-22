@@ -30,12 +30,15 @@ Et la skill `checklist-site` : la même checklist, que Claude lance tout seul qu
 ## Installation
 
 **1. Chrome DevTools MCP** (Claude pilote un vrai Chrome : il en a besoin pour la vitesse, les
-cookies et l'accessibilité). Dans un terminal :
+cookies et l'accessibilité). Il te faut Google Chrome installé (la version normale suffit) et
+Node.js. Dans un terminal :
 
 ```
 claude mcp add chrome-devtools --scope user npx chrome-devtools-mcp@latest
 ```
 
+`--scope user` l'installe pour tous tes projets. Pour ce dossier seulement, mets `--scope project`
+à la place : Claude Code te demandera de l'approuver au prochain lancement, réponds oui.
 Redémarre Claude Code, puis tape `/mcp` : `chrome-devtools` doit être dans la liste.
 
 **2a. Les prompts** : ouvre un fichier de [`prompts/`](prompts/), remplace `https://ton-site.fr` par
@@ -44,10 +47,11 @@ ton adresse, colle le bloc dans Claude Code, ouvert dans le dossier de ton site.
 **2b. Ou la skill** : dans le dossier de ton site,
 
 ```
-npx skills add vincentventalon/checklist-site
+npx skills add vincentventalon/checklist-site -a claude-code
 ```
 
-Choisis Claude Code quand on te le demande. La skill arrive dans `.claude/skills/checklist-site/`.
+La skill arrive dans `.claude/skills/checklist-site/` (l'outil peut la ranger dans `.agents/skills/`
+et y faire un lien : c'est normal, Claude Code la trouve).
 À la main, c'est pareil : copie le dossier [`skills/checklist-site/`](skills/checklist-site/) dans
 `.claude/skills/` de ton projet, ou dans `~/.claude/skills/` pour l'avoir partout.
 
